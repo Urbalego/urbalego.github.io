@@ -30,7 +30,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
-
+	<link rel="icon" href="img/favicon.ico" />
 </head>
 
 <body id="page-top" class="index">
@@ -45,8 +45,29 @@
         </div>
     </header>
 	<body>
-		Pour intégrer la plate-forme Urbalego sur votre site, voici la marche à suivre.
-   
+		<p class="paragraphe"><br>Pour intégrer la plate-forme Urbalego sur votre site, il vous suffit d'apporter quelques modifications minimes au code source de votre site. 
+		<br><br>
+		Dans les exemples de code qui suivent, il vous faut remplacer "ma-commune" par l'identifiant de votre collectivité. <br>Cela fait, le simple ajout de ce code dans le code source de la page du guide permettra d'intégrer le service à votre site.
+		</p>
+		<p class="code">
+			
+				&lt;script type="text/javascript"&gt;sipadm = 'ma-commune';&lt;/script&gt;<br>
+				&lt;script src="//mip.urbalego.fr/js/integration.js" type="text/javascript"&gt;&lt;/script&gt;
+			
+		</p>
+		
+		<p class="code">
+			
+				&lt;script type="text/javascript"&gt;sipadm = 'ma-commune';&lt;/script&gt;
+				&lt;div id="contenu_integre">&lt;/div&gt;
+				&lt;script src="//mip.urbalego.fr/js/integration.js" type="text/javascript"&gt;&lt;/script&gt;
+				&lt;noscript&gt;
+					Pour accéder à toutes les fonctionnalités de ce site, vous devez activer JavaScript.
+					Voici les &lt;a href="http://www.enable-javascript.com/fr/" target="_blank"&gt; instructions pour activer JavaScript dans votre navigateur Web&lt;/a&gt;.&lt;br&gt;
+					Vous pouvez néanmoins consulter le guide en utilisant ce lien direct : &lt;a href="http://mip.urbalego.fr/ma-commune/guide-particuliers.html"&gt;Vos droits et démarches&lt;/a&gt;.
+				&lt;/noscript&gt;
+			
+		</p>
 	</body>
     <footer>
         <div class="container">
@@ -60,7 +81,7 @@
                         </li>
 						<li>
 						<p><b>Contact <br></b>
-							contact[at]autonomens.com
+							contact[at]urbalego.com
                         </p>
 						</li>
                     </ul>

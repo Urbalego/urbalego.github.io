@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2016 Start Bootstrap
+ * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -54,6 +54,17 @@ h6 {
 }
 .bg-darkest-gray {
   background-color: #222222;
+}
+.paragraphe {
+  text-align: center;
+}
+.code {
+  font: 1em/1.35em 'courier new', monospace;
+  padding: 5px 10px;
+  margin: 30px 0;
+  overflow: auto;
+  background-color: #FFF3F3;
+  border: 3px solid #A0A0A0;
 }
 .btn-primary {
   color: white;
