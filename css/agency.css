@@ -756,3 +756,6 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+iframe {
+  border: #777777 solid 1px;
+}
