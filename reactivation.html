@@ -30,7 +30,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
-	<link rel="icon" href="img/favicon.ico" />
+  <link rel="icon" href="img/favicon.ico" />
 </head>
 
 <body id="page-top" class="index">
@@ -40,72 +40,79 @@
         <div class="container">
             <div class="intro-text">
                 <!--<div class="intro-lead-in">Urbalego</div>-->
-                <div class="intro-heading">Urbalego</div>
+                <h1 class="intro-heading">Urbalego</h1>
             </div>
         </div>
     </header>
-	<body>
-		<p class="paragraphe"><br>Pour intégrer la plate-forme Urbalego sur votre site, il vous suffit d'apporter quelques modifications minimes au code source de votre site. 
-		<br><br>
-		Dans les exemples de code qui suivent, il vous faut remplacer "ma-commune" par l'identifiant de votre collectivité. <br>Cela fait, le simple ajout de ce code dans le code source de la page du guide permettra d'intégrer le service à votre site.
-		</p>
-		<p class="code">
-			
-				&lt;script type="text/javascript"&gt;sipadm = 'ma-commune';&lt;/script&gt;<br>
-				&lt;script src="//mip.urbalego.fr/js/integration.js" type="text/javascript"&gt;&lt;/script&gt;
-			
-		</p>
-		<br>
-		<p class="code">
-			
-				&lt;script type="text/javascript"&gt;sipadm = 'ma-commune';&lt;/script&gt;
-				&lt;div id="contenu_integre">&lt;/div&gt;
-				&lt;script src="//mip.urbalego.fr/js/integration.js" type="text/javascript"&gt;&lt;/script&gt;
-				&lt;noscript&gt;
-					Pour accéder à toutes les fonctionnalités de ce site, vous devez activer JavaScript.
-					Voici les &lt;a href="http://www.enable-javascript.com/fr/" target="_blank"&gt; instructions pour activer JavaScript dans votre navigateur Web&lt;/a&gt;.&lt;br&gt;
-					Vous pouvez néanmoins consulter le guide en utilisant ce lien direct : &lt;a href="http://mip.urbalego.fr/ma-commune/guide-particuliers.html"&gt;Vos droits et démarches&lt;/a&gt;.
-				&lt;/noscript&gt;
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="paragraphe">Pour intégrer la plate-forme Urbalego sur votre site, il vous suffit d'apporter quelques modifications minimes au code source de votre site.
+                    </p>
+                    <p class="paragraphe">
+                    Dans les exemples de code qui suivent, remplacez <code>ma-commune</code> par l'identifiant de votre collectivité. Ensuite, le simple ajout de ce code dans le code source de la page du guide permettra d'intégrer le service à votre site.
+                    </p>
+                    <p>Exemple simple</p>
+<pre class="code">
+&lt;script type="text/javascript"&gt;sipadm = 'ma-commune';&lt;/script&gt;<br>
+&lt;script src="//mip.urbalego.fr/js/integration.js" type="text/javascript"&gt;&lt;/script&gt;
+</pre>
 
-		</p>
-		<br>
-		<br>
-		<p class="paragraphe">
-			Pour afficher <strong>uniquement</strong> les Téléservices,<br>
-			vous pouvez ajouter simplement ajouter <code>formsonly = true;</code> entre <code>sipadm = 'ma-commune';</code> et <code>&lt;/script&gt;</code>
-		</p>
-	</body>
+<p>Exemple avec balise <code>&lt;noscript&gt;</code></p>
+<pre class="code">
+&lt;script type="text/javascript"&gt;sipadm = 'ma-commune';&lt;/script&gt;
+&lt;div id="contenu_integre">&lt;/div&gt;
+&lt;script src="//mip.urbalego.fr/js/integration.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;noscript&gt;
+  Pour accéder à toutes les fonctionnalités de ce site,
+  vous devez activer JavaScript.
+  Voici les &lt;a href="http://www.enable-javascript.com/fr/" target="_blank"&gt;
+    instructions pour activer JavaScript dans votre navigateur Web&lt;/a&gt;.&lt;br&gt;
+  Vous pouvez néanmoins consulter le guide en utilisant ce lien direct :
+    &lt;a href="http://mip.urbalego.fr/ma-commune/guide-particuliers.html"&gt;
+    Vos droits et démarches&lt;/a&gt;.
+&lt;/noscript&gt;
+</pre>
+                    <p class="paragraphe">
+                      Pour afficher <strong>uniquement</strong> les Téléservices,<br>
+                      vous pouvez ajouter simplement ajouter <code>formsonly = true;</code> entre <code>sipadm = 'ma-commune';</code> et <code>&lt;/script&gt;</code>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Urbalego 2017</span>
+                <div class="col-sm-4">
+                  <span class="copyright">Copyright &copy; Urbalego 2017</span>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <ul class="list-inline social-buttons">
                         <li><a href="https://twitter.com/urbalego"><i class="fa fa-twitter"></i></a>
                         </li>
-						<li>
-						<p><b>Contact <br></b>
-							contact (arobase) urbalego (point) com
+            <li>
+            <p><b>Contact <br></b>
+              contact (arobase) urbalego (point) com
                         </p>
-						</li>
+            </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <ul class="list-inline quicklinks">
                         <p>Urbalego est un service d'Autonomens SARL <br>
-							Bois de Tulle, 32700 Lectoure <br>
-							SARL au capital de 200 000 € <br>
-							SIREN : SIREN 813 792 686
+              Bois de Tulle, 32700 Lectoure <br>
+              SARL au capital de 200 000 € <br>
+              SIREN : SIREN 813 792 686
                         </p>
                     </ul>
-                
+
             </div>
         </div>
     </footer>
 
-   
+
 
      <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>

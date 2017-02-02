@@ -66,14 +66,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .code {
-    width: 600px;
-    margin: auto;
-    font: 1em/1.35em 'courier new', monospace;
-	padding: 5px 10px;
-    overflow: auto;
-    //color: #000000;
-    background-color: #FFF3F3;
-	border: 3px solid #A0A0A0;
+  overflow: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #FFF3F3;
+	border: 1px solid #A0A0A0;
 }
 
 // Restyled Primary Buttons
@@ -234,6 +231,9 @@ header {
 
 // Global Section Styles
 
+main {
+    padding: 20px 0;
+}
 section {
     padding: 100px 0;
     h2.section-heading {
@@ -303,8 +303,8 @@ section {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
         .portfolio-caption {
             max-width: 400px;
@@ -589,7 +589,7 @@ section#contact {
        font-weight: 700;
        color: @gray-lighter;
     }
-    :-ms-input-placeholder {  
+    :-ms-input-placeholder {
        .heading-font;
        font-weight: 700;
        color: @gray-lighter;
@@ -719,8 +719,8 @@ ul.social-buttons {
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }            
-        }        
+            }
+        }
     }
     .modal-backdrop {
         opacity: 0;
@@ -750,4 +750,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-primary;
+}
+
+iframe {
+    border: @gray-light solid 1px;
 }
